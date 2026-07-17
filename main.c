@@ -1,19 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int main() {
+    char c, h;
 
-int main(void)
-{
-	char c;
-	int i;
-	
-	printf("input a number : ");
-	scanf("%c", &c);
-	
-	i= c-'0';
-	printf("The input number is %i\n", i);
-	
-	return 0;
+    printf("enter a character : ");
+    scanf("%c", &c);
 
+    h = c + 1;
+    
+    printf("the next character of %c (%i) is %c (%i).\n", c, c, h, h);
+
+    return 0;
 }
